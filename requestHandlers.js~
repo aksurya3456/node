@@ -29,7 +29,7 @@ function upload(response, postData)
 	console.log("Request handler for upload was called");
 	response.writeHead(200, {"Content-Type": "text/plain"});
 	//response.write("You have sent: "+ string.parse(postData).text);
-	response.write("You have sent: "+ string.parse(postData)['text']);
+	response.write("You have sent: "+ string.parse(postData).text);
 	response.end();
 }
 
